@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>AnguarJS Samples</title>
+
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/jquery-ui/themes/cupertino/jquery-ui.min.css">
+
+  <link
+      href="https://secure-cdn-na.infragistics.com/igniteui/2016.1/latest/css/themes/infragistics/infragistics.theme.css"
+      rel="stylesheet" type="text/css"/>
+  <link href="https://secure-cdn-na.infragistics.com/igniteui/2016.1/latest/css/structure/infragistics.css"
+        rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" href="styles/app.css">
+</head>
+<body>
+<div ui-view></div>
+<div style="position: fixed; bottom: 0px; left: 10px; z-index: 1000; opacity: 0.25">
+  $stage = {{$state.current.name}}
+  <br>
+  $stateParams = {{$stateParams}}
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="bower_components/angular-touch/angular-touch.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+<script src="https://secure-cdn-na.infragistics.com/igniteui/2016.1/latest/js/infragistics.core.js"></script>
+<script src="https://secure-cdn-na.infragistics.com/igniteui/2016.1/latest/js/infragistics.lob.js"></script>
+<script src="https://secure-cdn-na.infragistics.com/igniteui/2016.1/latest/js/infragistics.dv.js"></script>
+
+<script src="bower_components/igniteui-angular/src/igniteui-angular.js"></script>
+
+<script src="scripts/bundle.min.js"></script>
+<script src="scripts/templateCachePartials.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div ng-show="vm.football.contentLoaded">
+        <h1 class="page-header">Football ({{vm.football.title}})</h1>
+
+        <a href="http://igniteui.github.io/igniteui-angular/">http://igniteui.github.io/igniteui-angular/</a>
+        <a href="http://api.football-data.org/documentation">http://api.football-data.org/documentation</a>
+
+        <ig-grid id="grid"
+                 data-source="vm.football.data_source"
+                 primary-key="id">
+          <columns>
+            <column key="caption" header-text="caption" data-type="string"></column>
+            <column key="league" header-text="league" data-type="string"></column>
+            <column key="year" header-text="year" data-type="string"></column>
+          </columns>
+          <features>
+            <feature name="Paging" page-size="10">
+            </feature>
+            <feature name="Filtering">
+            </feature>
+            <feature name="Sorting">
+            </feature>
+          </features>
+        </ig-grid>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2 sidebar">
+      <ul class="nav nav-sidebar">
+        <li ui-sref-active="active">
+          <a ui-sref="sample_contents.main.content_a">FrontEnd</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="sample_contents.main.content_b">500px</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="sample_contents.main.content_c">Homework</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-10 col-md-offset-2" ui-view="main">
+    </div>
+  </div>
+</div>

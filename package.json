@@ -1,0 +1,42 @@
+{
+  "name": "ia500",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Angular learning",
+  "author": "mitsuru.waku@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-http-proxy": "^0.9.1",
+    "bower": "^1.7.9",
+    "gulp": "^3.9.1",
+    "gulp-cachebust": "0.0.6",
+    "gulp-concat": "^2.6.0",
+    "gulp-install": "^0.6.0",
+    "gulp-ng-html2js": "^0.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "del": "^2.2.2",
+    "gulp-jshint": "^2.0.1",
+    "gutil": "^1.6.4",
+    "jasmine-core": "^2.4.1",
+    "jshint": "^2.9.2",
+    "karma": "^1.2.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-junit-reporter": "^1.1.0",
+    "protractor": "^4.0.3",
+    "run-sequence": "^1.2.2"
+  },
+  "scripts": {
+    "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
+    "heroku-postbuild": "gulp build-heroku",
+    "start": "node index.js",
+    "pretest": "npm install",
+    "test": "karma start karma.conf.js"
+  }
+}

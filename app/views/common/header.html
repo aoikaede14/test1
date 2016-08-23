@@ -1,0 +1,14 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Home</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav" ng-repeat="header_items in header.header_items">
+        <li ng-class="{active: $state.includes(header_items.active_state)}">
+          <a ui-sref="{{header_items.ui_sref}}">{{header_items.label}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
