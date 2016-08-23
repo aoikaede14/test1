@@ -6,5 +6,3 @@
 % gulp dev
 ```
 
-# Demo
-https://ia500.herokuapp.com
